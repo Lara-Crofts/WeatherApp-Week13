@@ -1,0 +1,41 @@
+{{!-- just html  --}}
+{{!-- copy main index.html boilerplate and paste to this index.hbs file --}}
+{{!-- can remove static plain index.html file since we have it here on hbs file --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+   <title>Main Weather</title>
+   <link rel="icon" href="/img/weather.png">
+<link rel="stylesheet" href="/css/styles.css"> 
+
+<body>
+    <div class="main-content">
+
+{{>header}}
+    <h2> TEST: Weather.... did it work??? hbs file populated new json files package is issue <br>
+        {{!-- {{title}}  --}}
+        <p>Use this site to get your weather!</p>
+    </h2>
+
+    <form>
+        <input placeholder="Location">
+        <button>Search</button>
+    </form>
+
+    <p id="message01"></p>
+    <p id="message02"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+
+</html>
+

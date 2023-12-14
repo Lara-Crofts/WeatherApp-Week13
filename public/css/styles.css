@@ -1,0 +1,64 @@
+body {
+color: #8f8585;
+font-family: Arial;
+max-width: 650px;
+margin: 0 auto; 
+/* first value if above and below (0), second value is left&right (16px) */
+padding: 0 16px;
+
+display: flex;
+/* row is left to right, column is top/bottom */
+flex-direction: column;
+min-height: 100vh;
+}
+
+.main-content {
+    /* pushes footer to bottom of page bc main div will take up all remainder of space */
+    flex-grow: 1;
+}
+
+footer {
+color: #765c5c;
+border-top: 4px solid #8b6f77;   
+margin-top: 16px;
+padding: 16px 0px;
+ 
+background-color: #d3e0eb;
+padding: 16px;
+margin: 16px; 
+}
+
+header {
+margin-top: 16px;
+margin-bottom: 48px;
+}
+
+h1 {
+font-size: 64px;
+margin-bottom: 16px;
+}
+
+header a {
+color: #3c7bbb;
+margin-right: 16px;
+text-decoration: none;
+}
+
+/* image */
+.portrait {
+width: 18vw; 
+}
+
+input {
+border: 1px solid #cccccc;
+padding: 8px;
+width: 40vw;
+}
+
+button {
+cursor: pointer; 
+border: 1px solid #888888;
+background: #a9bdcc;
+color: white;
+padding: 8px;
+}
